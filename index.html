@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColdAI Pro - Level Up Your B2B Outreach</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    
+    /* Flowtide Style Warm Pastel Mesh Background */
+    .flowtide-hero-bg {
+      background: linear-gradient(135deg, #fff1eb 0%, #ace0f9 100%),
+                  radial-gradient(circle at 20% 20%, rgba(255, 203, 164, 0.6) 0%, transparent 40%),
+                  radial-gradient(circle at 80% 80%, rgba(221, 214, 254, 0.7) 0%, transparent 50%);
+      background-blend-mode: overlay;
+    }
+
+    /* Soft Neumorphic / Playful Glass Cards */
+    .playful-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 20px 40px -15px rgba(139, 92, 246, 0.08);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .playful-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 25px 50px -12px rgba(139, 92, 246, 0.15);
+    }
+
+    /* Colorful Feature Cards matching the reference image */
+    .card-peach { background: linear-gradient(135deg, #fff1eb 0%, #ffecd2 100%); border: 1px solid rgba(255, 200, 150, 0.6); }
+    .card-purple { background: linear-gradient(135deg, #fbcfe8 0%, #e8d7f1 100%); border: 1px solid rgba(216, 180, 254, 0.6); }
+    .card-mint { background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); border: 1px solid rgba(110, 231, 183, 0.6); }
+
+    .input-field {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      transition: all 0.3s ease;
+    }
+    .input-field:focus {
+      background: #ffffff;
+      border-color: #8b5cf6;
+      box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.12);
+    }
+
+    .custom-scroll::-webkit-scrollbar { width: 6px; }
+    .custom-scroll::-webkit-scrollbar-track { background: #f8fafc; border-radius: 8px; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 8px; }
+
+    /* Float Animation for Hero Graphics */
+    @keyframes float-icon {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    .animate-float { animation: float-icon 4s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-[#fcfbf9] text-slate-900 min-h-screen relative selection:bg-purple-600 selection:text-white overflow-x-hidden">
+
+  <!-- Hero Section with Flowtide Warm Gradient & Vector Graphic -->
+  <section class="flowtide-hero-bg pt-8 pb-16 px-6 rounded-b-[40px] shadow-sm relative">
+    
+    <!-- Header -->
+    <header class="max-w-6xl mx-auto flex justify-between items-center mb-10">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-2xl bg-slate-900 flex items-center justify-center font-black text-white text-xl shadow-md">⚡</div>
+        <span class="text-xl font-black tracking-tight text-slate-900">ColdAI <span class="text-purple-600">Pro</span></span>
+      </div>
+      <div class="bg-white/80 backdrop-blur-md px-4 py-2 rounded-2xl border border-white text-xs font-extrabold text-slate-700 shadow-sm">
+        ✨ AI Sales Flow
+      </div>
+    </header>
+
+    <!-- Hero Content & SVG Graphic Layout -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-4 pb-6">
+      
+      <!-- Left Column: Title & Description -->
+      <div class="lg:col-span-7 text-center lg:text-left">
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight text-slate-900 mb-4 leading-[1.15]">
+          Level Up Your <br class="hidden sm:block"/>
+          <span class="bg-gradient-to-r from-purple-600 via-pink-600 to-amber-600 bg-clip-text text-transparent">Outreach Flow.</span>
+        </h1>
+        <p class="text-slate-700 text-sm md:text-base max-w-lg mx-auto lg:mx-0 font-medium leading-relaxed mb-6">
+          Say goodbye to chaos. Simplify sales, boost creativity, and get meetings in seconds.
+        </p>
+        <div class="flex flex-wrap justify-center lg:justify-start gap-3">
+          <a href="#app-interface" class="bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs px-6 py-3.5 rounded-2xl shadow-lg transition-all transform hover:scale-105">
+            Start Free Generation 🚀
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Flowtide Vector Workflow Graphic (Pure SVG) -->
+      <div class="lg:col-span-5 flex justify-center animate-float">
+        <div class="bg-white/70 p-6 rounded-3xl border border-white/90 shadow-xl backdrop-blur-md w-full max-w-[360px]">
+          <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+            <div class="flex items-center space-x-2">
+              <span class="w-3 h-3 rounded-full bg-red-400"></span>
+              <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+              <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+            </div>
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Workflow Sync</span>
+          </div>
+          <!-- Animated Workflow Visual Nodes -->
+          <div class="space-y-3">
+            <div class="bg-amber-100/80 p-3 rounded-2xl flex items-center justify-between border border-amber-200/60">
+              <div class="flex items-center space-x-2.5">
+                <span class="text-lg">🚀</span>
+                <span class="text-xs font-bold text-slate-800">1. Prospect Research</span>
+              </div>
+              <span class="text-[10px] font-black bg-amber-200 text-amber-800 px-2 py-0.5 rounded-full">Auto</span>
+            </div>
+            <div class="bg-purple-100/80 p-3 rounded-2xl flex items-center justify-between border border-purple-200/60">
+              <div class="flex items-center space-x-2.5">
+                <span class="text-lg">⚡</span>
+                <span class="text-xs font-bold text-slate-800">2. AI Copy Personalization</span>
+              </div>
+              <span class="text-[10px] font-black bg-purple-200 text-purple-800 px-2 py-0.5 rounded-full">Groq AI</span>
+            </div>
+            <div class="bg-emerald-100/80 p-3 rounded-2xl flex items-center justify-between border border-emerald-200/60">
+              <div class="flex items-center space-x-2.5">
+                <span class="text-lg">📈</span>
+                <span class="text-xs font-bold text-slate-800">3. Multi-Channel Outreach</span>
+              </div>
+              <span class="text-[10px] font-black bg-emerald-200 text-emerald-800 px-2 py-0.5 rounded-full">Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 3 Colorful Feature Cards with Pure Vector Icons -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
+      
+      <!-- Card 1: Peach (Rocket) -->
+      <div class="card-peach rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+        <div class="w-14 h-14 rounded-2xl bg-white/90 p-3 flex items-center justify-center mb-4 shadow-sm text-2xl">
+          🚀
+        </div>
+        <div>
+          <h3 class="font-extrabold text-slate-900 text-base mb-1">Smart Automation</h3>
+          <p class="text-xs text-slate-700 font-medium leading-relaxed">Eliminate repetitive tasks with intuitive AI workflows.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Purple (Team Sync) -->
+      <div class="card-purple rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+        <div class="w-14 h-14 rounded-2xl bg-white/90 p-3 flex items-center justify-center mb-4 shadow-sm text-2xl">
+          🤝
+        </div>
+        <div>
+          <h3 class="font-extrabold text-slate-900 text-base mb-1">Team Sync</h3>
+          <p class="text-xs text-slate-700 font-medium leading-relaxed">Real-time collaboration for seamless teamwork.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Mint (Creative Insights) -->
+      <div class="card-mint rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+        <div class="w-14 h-14 rounded-2xl bg-white/90 p-3 flex items-center justify-center mb-4 shadow-sm text-2xl">
+          💡
+        </div>
+        <div>
+          <h3 class="font-extrabold text-slate-900 text-base mb-1">Creative Insights</h3>
+          <p class="text-xs text-slate-700 font-medium leading-relaxed">Visualize progress and unblock pipeline roadblocks.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main AI App Interface -->
+  <main id="app-interface" class="max-w-3xl mx-auto px-4 py-12 relative z-10">
+    <div class="playful-card rounded-[32px] p-6 md:p-12">
+      
+      <div class="space-y-6">
+
+        <!-- Quick Niche Presets -->
+        <div class="bg-purple-50/80 border border-purple-100 rounded-2xl p-3.5">
+          <span class="block text-[11px] font-black uppercase tracking-wider text-purple-700 mb-2">⚡ 1-Click Quick Preset Fillers:</span>
+          <div class="flex flex-wrap gap-2">
+            <button onclick="loadPreset('saas')" class="text-xs font-bold bg-white hover:bg-purple-600 hover:text-white text-purple-700 px-3 py-1.5 rounded-2xl border border-purple-200 shadow-sm transition-all cursor-pointer">🚀 SaaS Outbound</button>
+            <button onclick="loadPreset('agency')" class="text-xs font-bold bg-white hover:bg-purple-600 hover:text-white text-purple-700 px-3 py-1.5 rounded-2xl border border-purple-200 shadow-sm transition-all cursor-pointer">💼 Dev & Design Agency</button>
+            <button onclick="loadPreset('marketing')" class="text-xs font-bold bg-white hover:bg-purple-600 hover:text-white text-purple-700 px-3 py-1.5 rounded-2xl border border-purple-200 shadow-sm transition-all cursor-pointer">📈 Marketing Growth</button>
+          </div>
+        </div>
+
+        <!-- Prospect Info -->
+        <div>
+          <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-2">1. Target Prospect & Company</label>
+          <input id="prospect" type="text" placeholder="e.g. Rahul Sharma, Founder at GrowthPulse (Series A SaaS)" class="input-field w-full rounded-2xl p-4 text-sm text-slate-900 placeholder-slate-400 outline-none font-medium shadow-sm">
+        </div>
+
+        <!-- Personalization Hook -->
+        <div>
+          <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-2">2. Personalization Hook / Pain Point</label>
+          <input id="hook" type="text" placeholder="e.g. Low response rates on cold email, expanding outbound team" class="input-field w-full rounded-2xl p-4 text-sm text-slate-900 placeholder-slate-400 outline-none font-medium shadow-sm">
+        </div>
+
+        <!-- Value Offer -->
+        <div>
+          <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-2">3. Your Value Offer / Solution</label>
+          <textarea id="offer" rows="3" placeholder="e.g. We provide AI outbound engine that books 20+ qualified sales calls per month." class="input-field w-full rounded-2xl p-4 text-sm text-slate-900 placeholder-slate-400 outline-none font-medium shadow-sm"></textarea>
+        </div>
+
+        <!-- Dropdowns -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-2">Outreach Tone</label>
+            <select id="tone" class="input-field w-full rounded-2xl p-3.5 text-sm text-slate-900 outline-none font-bold shadow-sm">
+              <option value="Direct & Value-Driven">Direct & Value-Driven</option>
+              <option value="Casual & Friendly">Casual & Friendly</option>
+              <option value="Consultative Advisor">Consultative Advisor</option>
+              <option value="High-Urgency Pitch">High-Urgency Pitch</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-2">Email Length</label>
+            <select id="length" class="input-field w-full rounded-2xl p-3.5 text-sm text-slate-900 outline-none font-bold shadow-sm">
+              <option value="Short & Punchy (Under 100 Words)">Short & Punchy (< 100 Words)</option>
+              <option value="Detailed Value Pitch">Detailed Value Pitch</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <button id="generateBtn" onclick="generateOutreach()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-extrabold py-4 rounded-2xl transition-all shadow-xl shadow-slate-900/10 tracking-wide text-sm flex items-center justify-center space-x-2 active:scale-[0.99] cursor-pointer">
+          <span id="btnText">✨ GENERATE OUTREACH CAMPAIGN</span>
+        </button>
+      </div>
+
+      <!-- Loading State -->
+      <div id="loadingBox" class="mt-10 hidden text-center py-12">
+        <div class="inline-block w-10 h-10 border-4 border-purple-600 border-t-transparent rounded-full animate-spin mb-4 shadow-sm"></div>
+        <p class="text-xs font-extrabold text-purple-600 tracking-widest uppercase">AI Flow Engine Crafting Campaign...</p>
+      </div>
+
+      <!-- Output Container -->
+      <div id="outputBox" class="mt-10 hidden space-y-5">
+        
+        <!-- Score Bar & Quick Actions -->
+        <div class="bg-purple-50/70 rounded-2xl p-4 border border-purple-100 flex flex-wrap items-center justify-between gap-3 shadow-sm">
+          <div class="flex items-center space-x-3.5">
+            <div id="scoreBadge" class="w-11 h-11 rounded-xl bg-emerald-600 text-white font-black flex items-center justify-center text-sm shadow-md">99%</div>
+            <div>
+              <span id="spamStatusText" class="text-xs font-black text-slate-900 block">Spam Check: Clean (0 Risk Words)</span>
+              <span class="text-[11px] font-semibold text-slate-500">Optimized for high deliverability</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <button onclick="openInGmail()" class="text-xs font-extrabold bg-red-50 hover:bg-red-100 text-red-600 px-3 py-2 rounded-xl border border-red-200 transition-all flex items-center space-x-1 cursor-pointer">
+              <span>📧 Gmail</span>
+            </button>
+            <button onclick="downloadTxt()" class="text-xs font-extrabold bg-white hover:bg-slate-50 text-slate-700 px-3 py-2 rounded-xl border border-slate-200 transition-all flex items-center space-x-1 cursor-pointer">
+              <span>💾 .txt</span>
+            </button>
+            <button onclick="copyActiveTab()" class="text-xs font-extrabold bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-xl shadow-sm transition-all cursor-pointer">
+              <span id="copyBtnText">📋 Copy Tab</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tabs Interface -->
+        <div class="bg-white border border-slate-200/90 rounded-2xl p-2 shadow-sm">
+          <div class="flex border-b border-slate-100 pb-2 mb-3 gap-2 px-2 overflow-x-auto">
+            <button id="tab1Btn" onclick="switchTab(1)" class="flex-1 text-xs font-black py-2.5 px-3 rounded-xl transition-all bg-purple-600 text-white shadow-md cursor-pointer whitespace-nowrap">📧 Cold Email A</button>
+            <button id="tab2Btn" onclick="switchTab(2)" class="flex-1 text-xs font-extrabold py-2.5 px-3 rounded-xl transition-all text-slate-600 hover:bg-slate-100 cursor-pointer whitespace-nowrap">🎯 Email Variant B</button>
+            <button id="tab3Btn" onclick="switchTab(3)" class="flex-1 text-xs font-extrabold py-2.5 px-3 rounded-xl transition-all text-slate-600 hover:bg-slate-100 cursor-pointer whitespace-nowrap">💼 LinkedIn Note</button>
+            <button id="tab4Btn" onclick="switchTab(4)" class="flex-1 text-xs font-extrabold py-2.5 px-3 rounded-xl transition-all text-slate-600 hover:bg-slate-100 cursor-pointer whitespace-nowrap">🔄 Follow-Up</button>
+          </div>
+
+          <div class="p-4">
+            <div id="tab1Content" class="text-slate-800 text-sm leading-relaxed whitespace-pre-line font-sans custom-scroll max-h-[420px] overflow-y-auto"></div>
+            <div id="tab2Content" class="hidden text-slate-800 text-sm leading-relaxed whitespace-pre-line font-sans custom-scroll max-h-[420px] overflow-y-auto"></div>
+            <div id="tab3Content" class="hidden text-slate-800 text-sm leading-relaxed whitespace-pre-line font-sans custom-scroll max-h-[420px] overflow-y-auto"></div>
+            <div id="tab4Content" class="hidden text-slate-800 text-sm leading-relaxed whitespace-pre-line font-sans custom-scroll max-h-[420px] overflow-y-auto"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200/80 py-10 bg-white/60 backdrop-blur-md mt-12">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+      <div class="flex items-center space-x-2">
+        <span class="font-black text-slate-900 text-sm">ColdAI Pro</span>
+        <span>&copy; 2026. All rights reserved.</span>
+      </div>
+      <div class="flex space-x-6 font-bold text-slate-600">
+        <a href="#" class="hover:text-purple-600">Features</a>
+        <a href="#" class="hover:text-purple-600">Help Center</a>
+        <a href="#" class="hover:text-purple-600">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let generatedData = { emailA: "", emailB: "", linkedin: "", followup: "" };
+    let currentTab = 1;
+
+    function loadPreset(type) {
+      if (type === 'saas') {
+        document.getElementById('prospect').value = "Vikram Mehta, VP of Growth at DataFlow SaaS";
+        document.getElementById('hook').value = "Struggling with organic pipeline generation & high customer acquisition costs";
+        document.getElementById('offer').value = "We provide an automated AI sales pipeline that books 15-20 qualified demos/month";
+      } else if (type === 'agency') {
+        document.getElementById('prospect').value = "Neha Kapoor, CEO at PixelCraft Digital";
+        document.getElementById('hook').value = "Scaling client deliverables while maintaining high code quality";
+        document.getElementById('offer').value = "We build lightning-fast custom web apps and AI integrations for digital agencies";
+      } else if (type === 'marketing') {
+        document.getElementById('prospect').value = "Rohan Verma, Marketing Director at BrandBoost";
+        document.getElementById('hook').value = "Low response rates on multi-channel email outbound campaigns";
+        document.getElementById('offer').value = "We supply hyper-personalized AI email generators that triple open rates";
+      }
+    }
+
+    async function generateOutreach() {
+      const prospect = document.getElementById('prospect').value.trim();
+      const hook = document.getElementById('hook').value.trim();
+      const offer = document.getElementById('offer').value.trim();
+      const tone = document.getElementById('tone').value;
+      const length = document.getElementById('length').value;
+
+      const generateBtn = document.getElementById('generateBtn');
+      const btnText = document.getElementById('btnText');
+      const loadingBox = document.getElementById('loadingBox');
+      const outputBox = document.getElementById('outputBox');
+
+      if (!prospect || !offer) {
+        alert('Please fill out both Target Prospect and Your Value Offer!');
+        return;
+      }
+
+      generateBtn.disabled = true;
+      generateBtn.classList.add('opacity-70', 'cursor-not-allowed');
+      btnText.innerText = "Processing...";
+      loadingBox.classList.remove('hidden');
+      outputBox.classList.add('hidden');
+
+      const fullPrompt = `Act as an elite B2B Sales Personalization Expert. 
+Target Prospect: ${prospect}
+Hook / Pain Point: ${hook || 'Scaling revenue and efficiency'}
+Value Offer: ${offer}
+Tone: ${tone}
+Length Preference: ${length}
+
+Generate output in strict JSON format with exactly 4 keys:
+{
+  "emailA": "Primary cold email with 3 subject line variants",
+  "emailB": "Alternative psychological angle cold email variant B",
+  "linkedin": "Short LinkedIn connection note under 280 characters",
+  "followup": "Quick follow-up email to be sent 3 days later"
+}`;
+
+      try {
+        const response = await fetch('/api/groq', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prompt: fullPrompt })
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.choices && data.choices[0]) {
+          const rawText = data.choices[0].message.content;
+          
+          try {
+            const parsed = JSON.parse(rawText.substring(rawText.indexOf('{'), rawText.lastIndexOf('}') + 1));
+            generatedData.emailA = parsed.emailA;
+            generatedData.emailB = parsed.emailB;
+            generatedData.linkedin = parsed.linkedin;
+            generatedData.followup = parsed.followup;
+          } catch (e) {
+            generatedData.emailA = rawText;
+            generatedData.emailB = "Alternative Variant B:\n\n" + rawText;
+            generatedData.linkedin = `Hi ${prospect.split(',')[0]}, loved your work at ${prospect}. Open to connecting?`;
+            generatedData.followup = `Hi ${prospect.split(',')[0]}, quick bump on my previous message. Open to a brief chat?`;
+          }
+
+          document.getElementById('tab1Content').innerText = generatedData.emailA;
+          document.getElementById('tab2Content').innerText = generatedData.emailB;
+          document.getElementById('tab3Content').innerText = generatedData.linkedin;
+          document.getElementById('tab4Content').innerText = generatedData.followup;
+
+          checkSpamTriggerWords(generatedData.emailA + " " + generatedData.emailB);
+
+          switchTab(1);
+          outputBox.classList.remove('hidden');
+        } else {
+          alert('Error from Groq API: ' + (data.error || 'Failed to fetch'));
+        }
+      } catch (err) {
+        alert("API Error: Unable to reach /api/groq endpoint.");
+      } finally {
+        generateBtn.disabled = false;
+        generateBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+        btnText.innerText = "✨ GENERATE OUTREACH CAMPAIGN";
+        loadingBox.classList.add('hidden');
+      }
+    }
+
+    function checkSpamTriggerWords(text) {
+      const spamWords = ["100% free", "guaranteed", "earn money", "act now", "risk-free", "no obligation", "double your", "make $$$"];
+      let foundCount = 0;
+      const lowerText = text.toLowerCase();
+      spamWords.forEach(word => {
+        if (lowerText.includes(word)) foundCount++;
+      });
+
+      const badge = document.getElementById('scoreBadge');
+      const statusText = document.getElementById('spamStatusText');
+
+      if (foundCount === 0) {
+        badge.className = "w-11 h-11 rounded-xl bg-emerald-600 text-white font-black flex items-center justify-center text-sm shadow-md";
+        badge.innerText = "99%";
+        statusText.innerText = "Spam Check: Clean (0 Risk Words Found)";
+      } else {
+        badge.className = "w-11 h-11 rounded-xl bg-amber-500 text-white font-black flex items-center justify-center text-sm shadow-md";
+        badge.innerText = "85%";
+        statusText.innerText = `Spam Check Warning: ${foundCount} potential trigger words detected`;
+      }
+    }
+
+    function switchTab(tabNum) {
+      currentTab = tabNum;
+      for (let i = 1; i <= 4; i++) {
+        document.getElementById(`tab${i}Content`).classList.add('hidden');
+        document.getElementById(`tab${i}Btn`).className = "flex-1 text-xs font-extrabold py-2.5 px-3 rounded-xl transition-all text-slate-600 hover:bg-slate-100 cursor-pointer whitespace-nowrap";
+      }
+
+      document.getElementById(`tab${tabNum}Content`).classList.remove('hidden');
+      document.getElementById(`tab${tabNum}Btn`).className = "flex-1 text-xs font-black py-2.5 px-3 rounded-xl transition-all bg-purple-600 text-white shadow-md cursor-pointer whitespace-nowrap";
+    }
+
+    function copyActiveTab() {
+      let textToCopy = "";
+      if (currentTab === 1) textToCopy = generatedData.emailA;
+      if (currentTab === 2) textToCopy = generatedData.emailB;
+      if (currentTab === 3) textToCopy = generatedData.linkedin;
+      if (currentTab === 4) textToCopy = generatedData.followup;
+
+      navigator.clipboard.writeText(textToCopy);
+      const copyBtnText = document.getElementById('copyBtnText');
+      copyBtnText.innerText = '✅ Copied!';
+      setTimeout(() => { copyBtnText.innerText = '📋 Copy Tab'; }, 2000);
+    }
+
+    function openInGmail() {
+      let textToShare = currentTab === 1 ? generatedData.emailA : (currentTab === 2 ? generatedData.emailB : generatedData.followup);
+      const mailtoUrl = `mailto:?subject=Outreach Campaign&body=${encodeURIComponent(textToShare)}`;
+      window.open(mailtoUrl, '_blank');
+    }
+
+    function downloadTxt() {
+      let textToDownload = `--- COLD AI PRO CAMPAIGN ---\n\n[EMAIL VARIANT A]:\n${generatedData.emailA}\n\n[EMAIL VARIANT B]:\n${generatedData.emailB}\n\n[LINKEDIN NOTE]:\n${generatedData.linkedin}\n\n[FOLLOW UP]:\n${generatedData.followup}`;
+      const blob = new Blob([textToDownload], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'ColdAI_Outreach_Campaign.txt';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
